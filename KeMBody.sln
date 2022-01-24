@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KeMBody", "KeMBody\KeMBody.csproj", "{EB6C1DF1-C168-4A3E-886E-EC3773159C95}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2996A5FC-253F-4D63-91C2-1277E70DA303}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		Source Items\KeMBodyKey.snk = Source Items\KeMBodyKey.snk
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB6C1DF1-C168-4A3E-886E-EC3773159C95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB6C1DF1-C168-4A3E-886E-EC3773159C95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB6C1DF1-C168-4A3E-886E-EC3773159C95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB6C1DF1-C168-4A3E-886E-EC3773159C95}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E63400A-2070-4777-9398-DD1455CFFA1F}
+	EndGlobalSection
+EndGlobal
