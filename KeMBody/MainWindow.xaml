@@ -20,6 +20,8 @@
             </Grid.ColumnDefinitions>
 
             <Grid.RowDefinitions>
+                <RowDefinition Height="80"/>
+                <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
@@ -27,16 +29,45 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
+            <TextBlock
+                Grid.Column="0"
+                Grid.Row="0"
+                Padding="20"
+                FontFamily="Verdana"
+                FontSize="26"
+                FontWeight="Medium"
+                Foreground="White"
+                Text="KMBody"/>
 
-            <TextBlock x:Name="ApplicationTitle"
-                       Grid.Row="0"
-                       Grid.Column="0"
-                       Padding="20"
-                       FontFamily="Verdana"
-                       FontSize="26"
-                       FontWeight="Medium"
-                       Foreground="White"
-                       Text="KMBody"/>
+            <ToggleButton
+                Grid.Column="0"
+                Grid.Row="1"
+                Content="Podsumowanie"/>
+
+            <ToggleButton
+                Grid.Column="0"
+                Grid.Row="2"
+                Content="Waga"/>
+
+            <ToggleButton
+                Grid.Column="0"
+                Grid.Row="3"
+                Content="Pomiary"/>
+
+            <ToggleButton
+                Grid.Column="0"
+                Grid.Row="3"
+                Content="Pomiary"/>
+
+            <ToggleButton
+                Grid.Column="0"
+                Grid.Row="4"
+                Content="Ustawienia"/>
+
+            <ToggleButton
+                Grid.Column="0"
+                Grid.Row="5"
+                Content="Zakończ"/>
         </Grid>
     </Border>
 </Window>
