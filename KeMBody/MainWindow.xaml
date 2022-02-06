@@ -41,33 +41,37 @@
             <ToggleButton
                 Grid.Column="0"
                 Grid.Row="1"
-                FontFamily="Futura"
                 Style="{StaticResource MenuToggleButton}"
                 Content="Podsumowanie"/>
 
             <ToggleButton
                 Grid.Column="0"
                 Grid.Row="2"
+                Style="{StaticResource MenuToggleButton}"
                 Content="Waga"/>
 
             <ToggleButton
                 Grid.Column="0"
                 Grid.Row="3"
-                Content="Pomiary"/>
-
-            <ToggleButton
-                Grid.Column="0"
-                Grid.Row="3"
+                Style="{StaticResource MenuToggleButton}"
                 Content="Pomiary"/>
 
             <ToggleButton
                 Grid.Column="0"
                 Grid.Row="4"
+                Style="{StaticResource MenuToggleButton}"
                 Content="Ustawienia"/>
 
             <ToggleButton
                 Grid.Column="0"
                 Grid.Row="5"
+                Style="{StaticResource MenuToggleButton}"
+                Content="Historia"/>
+
+            <ToggleButton
+                Grid.Column="0"
+                Grid.Row="6"
+                Style="{StaticResource MenuToggleButton}"
                 Content="Zakończ"/>
         </Grid>
     </Border>
