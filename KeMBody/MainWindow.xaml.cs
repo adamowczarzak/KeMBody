@@ -1,4 +1,6 @@
-﻿using System.Windows;
+﻿using System.Globalization;
+using System.Threading;
+using System.Windows;
 
 namespace KeMBody
 {
@@ -9,6 +11,7 @@ namespace KeMBody
     {
         public MainWindow()
         {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("pl-PL");
             InitializeComponent();
         }
     }
