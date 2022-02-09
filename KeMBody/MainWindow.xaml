@@ -13,67 +13,72 @@
 
     <Border Background="#003855"
             CornerRadius="15">
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="200"/>
-                <ColumnDefinition />
-            </Grid.ColumnDefinitions>
 
+        <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="80"/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
+                <RowDefinition Height="60"/>
+                <RowDefinition />
             </Grid.RowDefinitions>
 
+            <Rectangle Grid.Row="0" Fill="#011f4b" />
+            <Rectangle Grid.Row="2" Fill="#194B66" />
             <TextBlock
                 Grid.Column="0"
                 Grid.Row="0"
                 Padding="20"
                 FontFamily="Futura"
-                FontSize="26"
+                FontSize="24"
                 FontWeight="Medium"
                 Foreground="White"
                 Text="KMBody"/>
 
-            <ToggleButton
-                Grid.Column="0"
-                Grid.Row="1"
-                Style="{StaticResource MenuToggleButton}"
-                Content="Podsumowanie"/>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="180"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
 
-            <ToggleButton
-                Grid.Column="0"
-                Grid.Row="2"
-                Style="{StaticResource MenuToggleButton}"
-                Content="Waga"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
 
-            <ToggleButton
-                Grid.Column="0"
-                Grid.Row="3"
-                Style="{StaticResource MenuToggleButton}"
-                Content="Pomiary"/>
+                    <ToggleButton
+                        Grid.Row="0"
+                        Style="{StaticResource MenuToggleButton}"
+                        Content="Podsumowanie"/>
 
-            <ToggleButton
-                Grid.Column="0"
-                Grid.Row="4"
-                Style="{StaticResource MenuToggleButton}"
-                Content="Ustawienia"/>
+                    <ToggleButton
+                        Grid.Row="1"
+                        Style="{StaticResource MenuToggleButton}"
+                        Content="Waga"/>
 
-            <ToggleButton
-                Grid.Column="0"
-                Grid.Row="5"
-                Style="{StaticResource MenuToggleButton}"
-                Content="Historia"/>
+                    <ToggleButton
+                        Grid.Row="2"
+                        Style="{StaticResource MenuToggleButton}"
+                        Content="Pomiary"/>
 
-            <ToggleButton
-                Grid.Column="0"
-                Grid.Row="6"
-                Style="{StaticResource MenuToggleButton}"
-                Content="{x:Static res:Lang.BtnExit}"/>
+                    <ToggleButton
+                        Grid.Row="3"
+                        Style="{StaticResource MenuToggleButton}"
+                        Content="Ustawienia"/>
+
+                    <ToggleButton
+                        Grid.Row="4"
+                        Style="{StaticResource MenuToggleButton}"
+                        Content="Historia"/>
+
+                    <ToggleButton
+                        Grid.Row="5"
+                        Style="{StaticResource MenuToggleButton}"
+                        Content="{x:Static res:Lang.BtnExit}"/>
+                </Grid>
+            </Grid>
         </Grid>
     </Border>
 </Window>
