@@ -47,34 +47,36 @@
                         <RowDefinition/>
                         <RowDefinition/>
                     </Grid.RowDefinitions>
-
-                    <ToggleButton
-                        Grid.Row="0"
-                        Style="{StaticResource MenuToggleButton}"
-                        Content="{x:Static res:Lang.BtnSummary}"/>
+<!--Kolory dodać do jakiś słowników, coś, pomyśleć teraz o tym.-->
+                    <Rectangle Grid.Row="0" Fill="#003855" />
 
                     <ToggleButton
                         Grid.Row="1"
                         Style="{StaticResource MenuToggleButton}"
-                        Content="{x:Static res:Lang.BtnWeight}"/>
+                        Content="{x:Static res:Lang.BtnSummary}"/>
 
                     <ToggleButton
                         Grid.Row="2"
                         Style="{StaticResource MenuToggleButton}"
-                        Content="{x:Static res:Lang.BtnMeasurements}"/>
+                        Content="{x:Static res:Lang.BtnWeight}"/>
 
                     <ToggleButton
                         Grid.Row="3"
                         Style="{StaticResource MenuToggleButton}"
-                        Content="{x:Static res:Lang.BtnHistory}"/>
+                        Content="{x:Static res:Lang.BtnMeasurements}"/>
 
                     <ToggleButton
                         Grid.Row="4"
                         Style="{StaticResource MenuToggleButton}"
-                        Content="{x:Static res:Lang.BtnSettings}"/>
+                        Content="{x:Static res:Lang.BtnHistory}"/>
 
                     <ToggleButton
                         Grid.Row="5"
+                        Style="{StaticResource MenuToggleButton}"
+                        Content="{x:Static res:Lang.BtnSettings}"/>
+
+                    <ToggleButton
+                        Grid.Row="6"
                         Style="{StaticResource MenuToggleButton}"
                         Content="{x:Static res:Lang.BtnExit}"/>
                 </Grid>
