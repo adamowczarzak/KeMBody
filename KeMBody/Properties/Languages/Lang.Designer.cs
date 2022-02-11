@@ -68,5 +68,50 @@ namespace KeMBody.Properties.Languages {
                 return ResourceManager.GetString("BtnExit", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BtnHistory.
+        /// </summary>
+        public static string BtnHistory {
+            get {
+                return ResourceManager.GetString("BtnHistory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BtnMeasurements.
+        /// </summary>
+        public static string BtnMeasurements {
+            get {
+                return ResourceManager.GetString("BtnMeasurements", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BtnSettings.
+        /// </summary>
+        public static string BtnSettings {
+            get {
+                return ResourceManager.GetString("BtnSettings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BtnSummary.
+        /// </summary>
+        public static string BtnSummary {
+            get {
+                return ResourceManager.GetString("BtnSummary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BtnWeight.
+        /// </summary>
+        public static string BtnWeight {
+            get {
+                return ResourceManager.GetString("BtnWeight", resourceCulture);
+            }
+        }
     }
 }

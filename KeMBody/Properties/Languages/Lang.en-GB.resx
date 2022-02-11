@@ -120,4 +120,19 @@
   <data name="BtnExit" xml:space="preserve">
     <value>Exit</value>
   </data>
+  <data name="BtnHistory" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="BtnMeasurements" xml:space="preserve">
+    <value>Measurements</value>
+  </data>
+  <data name="BtnSettings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="BtnSummary" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="BtnWeight" xml:space="preserve">
+    <value>Weight</value>
+  </data>
 </root>
