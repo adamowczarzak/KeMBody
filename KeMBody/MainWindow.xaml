@@ -11,18 +11,15 @@
         Background="Transparent"
         AllowsTransparency="True">
 
-    <Border Background="#003855"
-            CornerRadius="15">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
 
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="60"/>
-                <RowDefinition />
-            </Grid.RowDefinitions>
-
-            <Rectangle Grid.Row="0" Fill="#011f4b" />
-            <Rectangle Grid.Row="2" Fill="#194B66" />
-            <TextBlock
+        <Rectangle Grid.Row="0" Fill="{StaticResource TopBarColor}" />
+        <Rectangle Grid.Row="2" Fill="{StaticResource MainApplicationColor}" />
+        <TextBlock
                 Grid.Column="0"
                 Grid.Row="0"
                 Padding="20"
@@ -32,55 +29,56 @@
                 Foreground="White"
                 Text="KMBody"/>
 
-            <Grid Grid.Row="1">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="180"/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="180"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
 
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-<!--Kolory dodać do jakiś słowników, coś, pomyśleć teraz o tym.-->
-                    <Rectangle Grid.Row="0" Fill="#003855" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
 
-                    <ToggleButton
-                        Grid.Row="1"
-                        Style="{StaticResource MenuToggleButton}"
-                        Content="{x:Static res:Lang.BtnSummary}"/>
+                <Rectangle
+                    Grid.Row="0"
+                    Fill="{StaticResource ToggleButtonColor}" />
 
-                    <ToggleButton
-                        Grid.Row="2"
-                        Style="{StaticResource MenuToggleButton}"
-                        Content="{x:Static res:Lang.BtnWeight}"/>
+                <ToggleButton
+                    Grid.Row="1"
+                    Style="{StaticResource MenuToggleButton}"
+                    Content="{x:Static res:Lang.BtnSummary}"/>
 
-                    <ToggleButton
-                        Grid.Row="3"
-                        Style="{StaticResource MenuToggleButton}"
-                        Content="{x:Static res:Lang.BtnMeasurements}"/>
+                <ToggleButton
+                    Grid.Row="2"
+                    Style="{StaticResource MenuToggleButton}"
+                    Content="{x:Static res:Lang.BtnWeight}"/>
 
-                    <ToggleButton
-                        Grid.Row="4"
-                        Style="{StaticResource MenuToggleButton}"
-                        Content="{x:Static res:Lang.BtnHistory}"/>
+                <ToggleButton
+                    Grid.Row="3"
+                    Style="{StaticResource MenuToggleButton}"
+                    Content="{x:Static res:Lang.BtnMeasurements}"/>
 
-                    <ToggleButton
-                        Grid.Row="5"
-                        Style="{StaticResource MenuToggleButton}"
-                        Content="{x:Static res:Lang.BtnSettings}"/>
+                <ToggleButton
+                    Grid.Row="4"
+                    Style="{StaticResource MenuToggleButton}"
+                    Content="{x:Static res:Lang.BtnHistory}"/>
 
-                    <ToggleButton
-                        Grid.Row="6"
-                        Style="{StaticResource MenuToggleButton}"
-                        Content="{x:Static res:Lang.BtnExit}"/>
-                </Grid>
+                <ToggleButton
+                    Grid.Row="5"
+                    Style="{StaticResource MenuToggleButton}"
+                    Content="{x:Static res:Lang.BtnSettings}"/>
+
+                <ToggleButton
+                    Grid.Row="6"
+                    Style="{StaticResource MenuToggleButton}"
+                    Content="{x:Static res:Lang.BtnExit}"/>
             </Grid>
         </Grid>
-    </Border>
+    </Grid>
 </Window>

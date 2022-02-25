@@ -54,4 +54,10 @@
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <Page Update="Styles\Colors.xaml">
+      <CustomToolNamespace></CustomToolNamespace>
+    </Page>
+  </ItemGroup>
+
 </Project>
