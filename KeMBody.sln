@@ -7,12 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KeMBody", "KeMBody\KeMBody.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2996A5FC-253F-4D63-91C2-1277E70DA303}"
 	ProjectSection(SolutionItems) = preProject
-		.gitignore = .gitignore
+		.editorconfig = .editorconfig
 		.gitattributes = .gitattributes
+		.gitignore = .gitignore
 		Source Items\KeMBodyKey.snk = Source Items\KeMBodyKey.snk
 		LICENSE = LICENSE
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KeMBody.Core", "KeMBody.Core\KeMBody.Core.csproj", "{C94B15CE-0317-4ECD-8785-8CA53CCF75CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +27,10 @@ Global
 		{EB6C1DF1-C168-4A3E-886E-EC3773159C95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB6C1DF1-C168-4A3E-886E-EC3773159C95}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB6C1DF1-C168-4A3E-886E-EC3773159C95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C94B15CE-0317-4ECD-8785-8CA53CCF75CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C94B15CE-0317-4ECD-8785-8CA53CCF75CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C94B15CE-0317-4ECD-8785-8CA53CCF75CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C94B15CE-0317-4ECD-8785-8CA53CCF75CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

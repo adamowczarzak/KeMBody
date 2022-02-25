@@ -4,7 +4,14 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon />
+    <Win32Resource />
+    <NeutralLanguage>en</NeutralLanguage>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Update="Properties\Languages\Lang.Designer.cs">
