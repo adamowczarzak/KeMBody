@@ -1,4 +1,6 @@
-﻿using System.Globalization;
+﻿using KeMBody.ViewModels;
+using System;
+using System.Globalization;
 using System.Threading;
 using System.Windows;
 
@@ -12,6 +14,8 @@ namespace KeMBody
         public MainWindow()
         {
             Thread.CurrentThread.CurrentUICulture = new CultureInfo("pl-PL");
+
+            DataContext = new MainWindowViewModel(() => Close());
             InitializeComponent();
         }
     }

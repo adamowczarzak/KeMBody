@@ -10,6 +10,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\KeMBody.ViewModels\KeMBody.ViewModels.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Properties\Languages\Lang.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>

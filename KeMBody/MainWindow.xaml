@@ -77,6 +77,7 @@
                 <ToggleButton
                     Grid.Row="6"
                     Style="{StaticResource MenuToggleButton}"
+                    Command="{Binding CloseWindowCommand, Mode=OneWay}"
                     Content="{x:Static res:Lang.BtnExit}"/>
             </Grid>
         </Grid>
