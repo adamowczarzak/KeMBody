@@ -2,7 +2,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
     <Style TargetType="{x:Type ToggleButton}" x:Key="MenuToggleButton">
-        <Setter Property="Background" Value="{StaticResource ToggleButtonColor}"/>
+        <Setter Property="Background" Value="{StaticResource ToggleButtonBrushColor}"/>
         <Setter Property="Foreground" Value="AntiqueWhite"/>
         <Setter Property="FontSize" Value="14"/>
         <Setter Property="Cursor" Value="Hand"/>
@@ -21,12 +21,12 @@
 
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Background" Value="{StaticResource IsMouseOverColor}" />
+                            <Setter Property="Background" Value="{StaticResource IsMouseOverBrushColor}" />
                             <Setter Property="Foreground" Value="AntiqueWhite" />
                         </Trigger>
 
                         <Trigger Property="IsPressed" Value="True">
-                            <Setter Property="Background" Value="{StaticResource IsPressedColor}" />
+                            <Setter Property="Background" Value="{StaticResource IsPressedBrushColor}" />
                             <Setter Property="Foreground" Value="AntiqueWhite" />
                         </Trigger>
                     </ControlTemplate.Triggers>

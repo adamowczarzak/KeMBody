@@ -17,8 +17,8 @@
             <RowDefinition />
         </Grid.RowDefinitions>
 
-        <Rectangle Grid.Row="0" Fill="{StaticResource TopBarColor}" />
-        <Rectangle Grid.Row="2" Fill="{StaticResource MainApplicationColor}" />
+        <Rectangle Grid.Row="0" Fill="{StaticResource TopBarBrushColor}" />
+        <Rectangle Grid.Row="2" Fill="{StaticResource MainApplicationBrushColor}" />
         <TextBlock
                 Grid.Column="0"
                 Grid.Row="0"
@@ -47,7 +47,7 @@
 
                 <Rectangle
                     Grid.Row="0"
-                    Fill="{StaticResource ToggleButtonColor}" />
+                    Fill="{StaticResource ToggleButtonBrushColor}" />
 
                 <ToggleButton
                     Grid.Row="1"
