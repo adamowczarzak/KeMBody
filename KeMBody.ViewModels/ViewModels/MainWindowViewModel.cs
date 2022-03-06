@@ -14,9 +14,9 @@ namespace KeMBody.ViewModels
             CloseWindowCommand = new RelayCommand(action);
         }
 
-        protected void OnPropertyChange(string name)
+        protected void OnPropertyChange(string propertyName)
         {
-            PropertyChanged(this, new PropertyChangedEventArgs(name));
+            PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

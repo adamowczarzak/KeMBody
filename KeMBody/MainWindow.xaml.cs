@@ -1,6 +1,5 @@
-﻿using KeMBody.ViewModels;
-using System;
-using System.Globalization;
+﻿using System.Globalization;
+using KeMBody.ViewModels;
 using System.Threading;
 using System.Windows;
 
