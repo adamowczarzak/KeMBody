@@ -1,5 +1,5 @@
-﻿using System;
-using System.Windows.Input;
+﻿using System.Windows.Input;
+using System;
 
 namespace KeMBody.ViewModels
 {
@@ -10,6 +10,7 @@ namespace KeMBody.ViewModels
 #pragma warning restore CS0067
 
         private readonly Func<object, bool> canExecute;
+        private readonly Action<object> actionWithParameter;
         private readonly Action action;
 
         public RelayCommand(Action action, Func<object, bool> canExecute = null)
@@ -18,12 +19,22 @@ namespace KeMBody.ViewModels
             this.canExecute = canExecute;
         }
 
+        public RelayCommand(Action<object> actionWithParameter)
+        {
+            this.actionWithParameter = actionWithParameter;
+        }
+
         public bool CanExecute(object parameter)
         {
             return canExecute == null || canExecute(parameter);
         }
 
         public void Execute(object parameter)
+        {
+            actionWithParameter(parameter);
+        }
+
+        public void Execute()
         {
             action();
         }

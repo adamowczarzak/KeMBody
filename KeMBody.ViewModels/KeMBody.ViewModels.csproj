@@ -4,4 +4,9 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\KeMBody.Extensions\KeMBody.Extensions.csproj" />
+    <ProjectReference Include="..\KeMBody.Resources\KeMBody.Resources.csproj" />
+  </ItemGroup>
+
 </Project>

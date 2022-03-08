@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 using System.Windows.Input;
-using System;
+using KeMBody.Extensions;
 
 namespace KeMBody.ViewModels
 {
@@ -9,14 +9,20 @@ namespace KeMBody.ViewModels
         public ICommand CloseWindowCommand { get; private set; }
         public event PropertyChangedEventHandler PropertyChanged;
 
-        public MainWindowViewModel(Action action)
+        public MainWindowViewModel()
         {
-            CloseWindowCommand = new RelayCommand(action);
+            CloseWindowCommand = new RelayCommand(CloseWindow);
         }
 
         protected void OnPropertyChange(string propertyName)
         {
             PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
         }
+
+        public void CloseWindow(object source)
+        {
+            source.InvokeToMethod(Names.Close);
+        }
+
     }
 }
