@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KeMBody.ViewModels", "KeMBo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KeMBody.Extensions", "KeMBody.Extensions\KeMBody.Extensions.csproj", "{2159575E-9385-4565-8608-74FA41023004}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeMBody.Resources", "KeMBody.Resources\KeMBody.Resources.csproj", "{739E6D43-4322-4EDA-9889-0A5FB8640E6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KeMBody.Resources", "KeMBody.Resources\KeMBody.Resources.csproj", "{739E6D43-4322-4EDA-9889-0A5FB8640E6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeMBody.Enumerations", "KeMBody.Enumerations\KeMBody.Enumerations.csproj", "{43296ED7-A12E-4F7D-826D-FB322460BD50}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,10 @@ Global
 		{739E6D43-4322-4EDA-9889-0A5FB8640E6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{739E6D43-4322-4EDA-9889-0A5FB8640E6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{739E6D43-4322-4EDA-9889-0A5FB8640E6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43296ED7-A12E-4F7D-826D-FB322460BD50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43296ED7-A12E-4F7D-826D-FB322460BD50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43296ED7-A12E-4F7D-826D-FB322460BD50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43296ED7-A12E-4F7D-826D-FB322460BD50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

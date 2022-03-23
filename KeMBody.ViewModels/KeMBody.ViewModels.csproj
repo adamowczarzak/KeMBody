@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\KeMBody.Enumerations\KeMBody.Enumerations.csproj" />
     <ProjectReference Include="..\KeMBody.Extensions\KeMBody.Extensions.csproj" />
     <ProjectReference Include="..\KeMBody.Resources\KeMBody.Resources.csproj" />
   </ItemGroup>

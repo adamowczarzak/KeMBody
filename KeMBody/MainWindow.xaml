@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:res="clr-namespace:KeMBody.UI.Properties.Languages"
         xmlns:vm="clr-namespace:KeMBody.ViewModels;assembly=KeMBody.ViewModels"
+        xmlns:en="clr-namespace:KeMBody.Enumerations;assembly=KeMBody.Enumerations"
         mc:Ignorable="d"
         Height="450" Width="800"
         WindowStyle="None"
@@ -48,6 +49,7 @@
                     <RowDefinition/>
                     <RowDefinition/>
                     <RowDefinition/>
+                    <RowDefinition/>
                 </Grid.RowDefinitions>
 
                 <Rectangle
@@ -57,26 +59,36 @@
                 <ToggleButton
                     Grid.Row="1"
                     Style="{StaticResource MenuToggleButton}"
+                    Command="{Binding DisplayPageCommand, Mode=OneWay}"
+                    CommandParameter="{x:Static en:ApplicationPage.Summary}"
                     Content="{x:Static res:Lang.BtnSummary}"/>
 
                 <ToggleButton
                     Grid.Row="2"
                     Style="{StaticResource MenuToggleButton}"
+                    Command="{Binding DisplayPageCommand, Mode=OneWay}"
+                    CommandParameter="{x:Static en:ApplicationPage.Weight}"
                     Content="{x:Static res:Lang.BtnWeight}"/>
 
                 <ToggleButton
                     Grid.Row="3"
                     Style="{StaticResource MenuToggleButton}"
+                    Command="{Binding DisplayPageCommand, Mode=OneWay}"
+                    CommandParameter="{x:Static en:ApplicationPage.Measurements}"
                     Content="{x:Static res:Lang.BtnMeasurements}"/>
 
                 <ToggleButton
                     Grid.Row="4"
                     Style="{StaticResource MenuToggleButton}"
+                    Command="{Binding DisplayPageCommand, Mode=OneWay}"
+                    CommandParameter="{x:Static en:ApplicationPage.History}"
                     Content="{x:Static res:Lang.BtnHistory}"/>
 
                 <ToggleButton
                     Grid.Row="5"
                     Style="{StaticResource MenuToggleButton}"
+                    Command="{Binding DisplayPageCommand, Mode=OneWay}"
+                    CommandParameter="{x:Static en:ApplicationPage.Settings}"
                     Content="{x:Static res:Lang.BtnSettings}"/>
 
                 <ToggleButton

@@ -13,5 +13,13 @@ namespace KeMBody.Extensions
             var methodInfo = source.GetType().GetMethod(name, bindFlags);
             return methodInfo.Invoke(source, parameters);
         }
+
+        /// <summary>
+        /// Konwersja jawna typów.
+        /// </summary>
+        public static T ConvertTo<T>(this object source)
+        {
+            return (T)source;
+        }
     }
 }
