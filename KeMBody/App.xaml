@@ -1,6 +1,8 @@
 ﻿<Application x:Class="KeMBody.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:v ="clr-namespace:KeMBody.UI.Pages"
+             xmlns:vm ="clr-namespace:KeMBody.ViewModels;assembly=KeMBody.ViewModels"
              StartupUri="MainWindow.xaml">
 
     <Application.Resources>
@@ -8,7 +10,11 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Styles/SolidColorBrushes.xaml"/>
                 <ResourceDictionary Source="Styles/ToggleButtons.xaml"/>
+                <ResourceDictionary Source="Styles/Buttons.xaml"/>
             </ResourceDictionary.MergedDictionaries>
+            <DataTemplate DataType="{x:Type vm:SummaryViewModel}">
+                <v:SummaryPage/>
+            </DataTemplate>
         </ResourceDictionary>
     </Application.Resources>
 

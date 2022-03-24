@@ -5,13 +5,13 @@ namespace KeMBody.ViewModels
 {
     public class RelayCommand : ICommand
     {
-#pragma warning disable CS0067
         public event EventHandler CanExecuteChanged;
-#pragma warning restore CS0067
 
         private readonly Func<object, bool> canExecute;
         private readonly Action<object> actionWithParameter;
         private readonly Action action;
+
+        public RelayCommand() { }
 
         public RelayCommand(Action action, Func<object, bool> canExecute = null)
         {
@@ -19,22 +19,28 @@ namespace KeMBody.ViewModels
             this.canExecute = canExecute;
         }
 
-        public RelayCommand(Action<object> actionWithParameter)
+        public RelayCommand(Action<object> actionWithParameter, Func<object, bool> canExecute = null)
         {
             this.actionWithParameter = actionWithParameter;
+            this.canExecute = canExecute;
         }
 
-        public bool CanExecute(object parameter)
+        public virtual void OnCanExecuteChanged()
+        {
+            CanExecuteChanged(this, EventArgs.Empty);
+        }
+
+        public virtual bool CanExecute(object parameter)
         {
             return canExecute == null || canExecute(parameter);
         }
 
-        public void Execute(object parameter)
+        public virtual void Execute(object parameter)
         {
             actionWithParameter(parameter);
         }
 
-        public void Execute()
+        public virtual void Execute()
         {
             action();
         }

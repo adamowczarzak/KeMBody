@@ -10,7 +10,6 @@
         Height="450" Width="800"
         WindowStyle="None"
         ResizeMode="NoResize"
-        Background="Transparent"
         x:Name="KeMBodyApplication">
 
     <Window.DataContext>
@@ -26,20 +25,25 @@
         <Rectangle Grid.Row="0" Fill="{StaticResource TopBarBrushColor}" />
         <Rectangle Grid.Row="2" Fill="{StaticResource MainApplicationBrushColor}" />
         <TextBlock
-                Grid.Column="0"
-                Grid.Row="0"
-                Padding="20"
-                FontFamily="Futura"
-                FontSize="20"
-                FontWeight="Medium"
-                Foreground="White"
-                Text="KMBody"/>
+            Grid.Column="0"
+            Grid.Row="0"
+            Padding="20"
+            FontFamily="Futura"
+            FontSize="20"
+            FontWeight="Medium"
+            Foreground="White"
+            Text="KMBody"/>
 
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="180"/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
+
+            <Frame
+                Grid.Column="1"
+                Content="{Binding SelectedPage}"
+                NavigationUIVisibility="Hidden" />
 
             <Grid>
                 <Grid.RowDefinitions>
@@ -59,35 +63,35 @@
                 <ToggleButton
                     Grid.Row="1"
                     Style="{StaticResource MenuToggleButton}"
-                    Command="{Binding DisplayPageCommand, Mode=OneWay}"
+                    Command="{Binding PageSelectionCommand, Mode=OneWay}"
                     CommandParameter="{x:Static en:ApplicationPage.Summary}"
                     Content="{x:Static res:Lang.BtnSummary}"/>
 
                 <ToggleButton
                     Grid.Row="2"
                     Style="{StaticResource MenuToggleButton}"
-                    Command="{Binding DisplayPageCommand, Mode=OneWay}"
+                    Command="{Binding PageSelectionCommand, Mode=OneWay}"
                     CommandParameter="{x:Static en:ApplicationPage.Weight}"
                     Content="{x:Static res:Lang.BtnWeight}"/>
 
                 <ToggleButton
                     Grid.Row="3"
                     Style="{StaticResource MenuToggleButton}"
-                    Command="{Binding DisplayPageCommand, Mode=OneWay}"
+                    Command="{Binding PageSelectionCommand, Mode=OneWay}"
                     CommandParameter="{x:Static en:ApplicationPage.Measurements}"
                     Content="{x:Static res:Lang.BtnMeasurements}"/>
 
                 <ToggleButton
                     Grid.Row="4"
                     Style="{StaticResource MenuToggleButton}"
-                    Command="{Binding DisplayPageCommand, Mode=OneWay}"
+                    Command="{Binding PageSelectionCommand, Mode=OneWay}"
                     CommandParameter="{x:Static en:ApplicationPage.History}"
                     Content="{x:Static res:Lang.BtnHistory}"/>
 
                 <ToggleButton
                     Grid.Row="5"
                     Style="{StaticResource MenuToggleButton}"
-                    Command="{Binding DisplayPageCommand, Mode=OneWay}"
+                    Command="{Binding PageSelectionCommand, Mode=OneWay}"
                     CommandParameter="{x:Static en:ApplicationPage.Settings}"
                     Content="{x:Static res:Lang.BtnSettings}"/>
 
