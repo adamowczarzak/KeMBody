@@ -16,8 +16,6 @@ namespace KeMBody.ViewModels
         {
             mainWindowViewModel.ApplicationPage = applicationPage.ConvertTo<ApplicationPage>();
             mainWindowViewModel.SelectedPage = new SummaryViewModel();
-
-            //OnPropertyChanged(nameof(SelectedPage));
         }
     }
 }
