@@ -11,6 +11,7 @@
                 <ResourceDictionary Source="Styles/SolidColorBrushes.xaml"/>
                 <ResourceDictionary Source="Styles/ToggleButtons.xaml"/>
                 <ResourceDictionary Source="Styles/Buttons.xaml"/>
+                <ResourceDictionary Source="Styles/TextBlocks.xaml"/>
             </ResourceDictionary.MergedDictionaries>
             <DataTemplate DataType="{x:Type vm:SummaryViewModel}">
                 <v:AddMeasurementsSummaryPage/>

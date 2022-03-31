@@ -6,28 +6,30 @@
         <Setter Property="Foreground" Value="AntiqueWhite"/>
         <Setter Property="FontSize" Value="14"/>
         <Setter Property="Cursor" Value="Hand"/>
-        <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="FontFamily" Value="Futura"/>
 
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ToggleButton}">
 
-                    <Border Background="{TemplateBinding Background}">
-                        <ContentPresenter Content="{TemplateBinding Content}"
-                                          HorizontalAlignment="Center"
-                                          VerticalAlignment="Center"/>
+                    <Border
+                        Background="{TemplateBinding Background}">
+
+                        <ContentPresenter
+                            Content="{TemplateBinding Content}"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"/>
                     </Border>
 
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Background" Value="{StaticResource IsMouseOverBrushColor}" />
-                            <Setter Property="Foreground" Value="AntiqueWhite" />
+                            <Setter Property="Background" Value="{StaticResource IsMouseOverBrushColor}"/>
+                            <Setter Property="Foreground" Value="AntiqueWhite"/>
                         </Trigger>
 
                         <Trigger Property="IsFocused" Value="True">
-                            <Setter Property="Background" Value="{StaticResource IsPressedBrushColor}" />
-                            <Setter Property="Foreground" Value="AntiqueWhite" />
+                            <Setter Property="Background" Value="{StaticResource IsPressedBrushColor}"/>
+                            <Setter Property="Foreground" Value="AntiqueWhite"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>

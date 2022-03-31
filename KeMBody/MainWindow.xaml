@@ -19,19 +19,15 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="60"/>
-            <RowDefinition />
+            <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <Rectangle Grid.Row="0" Fill="{StaticResource TopBarBrushColor}" />
-        <Rectangle Grid.Row="2" Fill="{StaticResource MainApplicationBrushColor}" />
+        <Rectangle Grid.Row="0" Fill="{StaticResource TopBarBrushColor}"/>
+        <Rectangle Grid.Row="2" Fill="{StaticResource MainApplicationBrushColor}"/>
+
         <TextBlock
-            Grid.Column="0"
-            Grid.Row="0"
+            Style="{StaticResource BigTitle}"
             Padding="20"
-            FontFamily="Futura"
-            FontSize="20"
-            FontWeight="Medium"
-            Foreground="White"
             Text="KMBody"/>
 
         <Grid Grid.Row="1">
@@ -43,7 +39,7 @@
             <Frame
                 Grid.Column="1"
                 Content="{Binding SelectedPage}"
-                NavigationUIVisibility="Hidden" />
+                NavigationUIVisibility="Hidden"/>
 
             <Grid>
                 <Grid.RowDefinitions>
