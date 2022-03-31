@@ -2,9 +2,9 @@
 
 namespace KeMBody.UI.Pages
 {
-    public partial class SummaryPage : Page
+    public partial class AddMeasurementsSummaryPage : Page
     {
-        public SummaryPage()
+        public AddMeasurementsSummaryPage()
         {
             InitializeComponent();
         }

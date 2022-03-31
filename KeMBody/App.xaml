@@ -13,7 +13,7 @@
                 <ResourceDictionary Source="Styles/Buttons.xaml"/>
             </ResourceDictionary.MergedDictionaries>
             <DataTemplate DataType="{x:Type vm:SummaryViewModel}">
-                <v:SummaryPage/>
+                <v:AddMeasurementsSummaryPage/>
             </DataTemplate>
         </ResourceDictionary>
     </Application.Resources>

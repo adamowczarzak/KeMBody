@@ -1,4 +1,4 @@
-﻿<Page x:Class="KeMBody.UI.Pages.SummaryPage"
+﻿<Page x:Class="KeMBody.UI.Pages.AddMeasurementsSummaryPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
