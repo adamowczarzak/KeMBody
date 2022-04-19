@@ -3,11 +3,11 @@
 namespace KeMBody.UI.Views.Pages
 {
     /// <summary>
-    /// Interaction logic for AddM.xaml
+    /// Interaction logic for WeightPage.xaml
     /// </summary>
-    public partial class AddMeasurementsSummaryPage : Page
+    public partial class WeightPage : Page
     {
-        public AddMeasurementsSummaryPage()
+        public WeightPage()
         {
             InitializeComponent();
         }

@@ -15,7 +15,7 @@ namespace KeMBody.ViewModels
         public override void Execute(object applicationPage)
         {
             mainWindowViewModel.ApplicationPage = applicationPage.ConvertTo<ApplicationPage>();
-            mainWindowViewModel.SelectedPage = new SummaryViewModel();
+            mainWindowViewModel.SelectedPage = new AddMeasurementsSummaryViewModel();
         }
     }
 }

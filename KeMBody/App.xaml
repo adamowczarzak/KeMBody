@@ -1,7 +1,7 @@
 ﻿<Application x:Class="KeMBody.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:v ="clr-namespace:KeMBody.UI.Pages"
+             xmlns:v ="clr-namespace:KeMBody.UI.Views.Pages"
              xmlns:vm ="clr-namespace:KeMBody.ViewModels;assembly=KeMBody.ViewModels"
              StartupUri="MainWindow.xaml">
 
@@ -12,9 +12,14 @@
                 <ResourceDictionary Source="Styles/ToggleButtons.xaml"/>
                 <ResourceDictionary Source="Styles/Buttons.xaml"/>
                 <ResourceDictionary Source="Styles/TextBlocks.xaml"/>
+                <ResourceDictionary Source="Styles/TextBoxes.xaml"/>
+                <ResourceDictionary Source="CustomControls/NumericUpDownStyle.xaml"/>
             </ResourceDictionary.MergedDictionaries>
-            <DataTemplate DataType="{x:Type vm:SummaryViewModel}">
+            <DataTemplate DataType="{x:Type vm:AddMeasurementsSummaryViewModel}">
                 <v:AddMeasurementsSummaryPage/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:WeightViewModel}">
+                <v:WeightPage/>
             </DataTemplate>
         </ResourceDictionary>
     </Application.Resources>

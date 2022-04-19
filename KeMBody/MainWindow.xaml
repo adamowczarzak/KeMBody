@@ -6,6 +6,7 @@
         xmlns:res="clr-namespace:KeMBody.UI.Properties.Languages"
         xmlns:vm="clr-namespace:KeMBody.ViewModels;assembly=KeMBody.ViewModels"
         xmlns:en="clr-namespace:KeMBody.Enumerations;assembly=KeMBody.Enumerations"
+        xmlns:local="clr-namespace:KeMBody.UI.CustomControls"
         mc:Ignorable="d"
         Height="450" Width="800"
         WindowStyle="None"
@@ -24,6 +25,8 @@
 
         <Rectangle Grid.Row="0" Fill="{StaticResource TopBarBrushColor}"/>
         <Rectangle Grid.Row="2" Fill="{StaticResource MainApplicationBrushColor}"/>
+        <local:NumericUpDown
+            Grid.Row="0"/>
 
         <TextBlock
             Style="{StaticResource BigTitle}"
@@ -50,6 +53,7 @@
                     <RowDefinition/>
                     <RowDefinition/>
                     <RowDefinition/>
+                    <RowDefinition/>
                 </Grid.RowDefinitions>
 
                 <Rectangle
@@ -67,32 +71,39 @@
                     Grid.Row="2"
                     Style="{StaticResource MenuToggleButton}"
                     Command="{Binding PageSelectionCommand, Mode=OneWay}"
+                    CommandParameter="{x:Static en:ApplicationPage.Calories}"
+                    Content="{x:Static res:Lang.BtnCalories}"/>
+
+                <ToggleButton
+                    Grid.Row="3"
+                    Style="{StaticResource MenuToggleButton}"
+                    Command="{Binding PageSelectionCommand, Mode=OneWay}"
                     CommandParameter="{x:Static en:ApplicationPage.Weight}"
                     Content="{x:Static res:Lang.BtnWeight}"/>
 
                 <ToggleButton
-                    Grid.Row="3"
+                    Grid.Row="4"
                     Style="{StaticResource MenuToggleButton}"
                     Command="{Binding PageSelectionCommand, Mode=OneWay}"
                     CommandParameter="{x:Static en:ApplicationPage.Measurements}"
                     Content="{x:Static res:Lang.BtnMeasurements}"/>
 
                 <ToggleButton
-                    Grid.Row="4"
+                    Grid.Row="5"
                     Style="{StaticResource MenuToggleButton}"
                     Command="{Binding PageSelectionCommand, Mode=OneWay}"
                     CommandParameter="{x:Static en:ApplicationPage.History}"
                     Content="{x:Static res:Lang.BtnHistory}"/>
 
                 <ToggleButton
-                    Grid.Row="5"
+                    Grid.Row="6"
                     Style="{StaticResource MenuToggleButton}"
                     Command="{Binding PageSelectionCommand, Mode=OneWay}"
                     CommandParameter="{x:Static en:ApplicationPage.Settings}"
                     Content="{x:Static res:Lang.BtnSettings}"/>
 
                 <ToggleButton
-                    Grid.Row="6"
+                    Grid.Row="7"
                     Style="{StaticResource MenuToggleButton}"
                     Command="{Binding CloseWindowCommand, Mode=OneWay}"
                     CommandParameter="{Binding ElementName=KeMBodyApplication}"
