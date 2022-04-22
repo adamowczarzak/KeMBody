@@ -1,16 +1,34 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="clr-namespace:KeMBody.UI.CustomControls">
-    <Style TargetType="local:NumericUpDown">
+
+    <Style TargetType="{x:Type local:NumericUpDown}">
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="local:NumericUpDown">
+                <ControlTemplate TargetType="{x:Type local:NumericUpDown}">
+
                     <Grid>
-                    <Line Stroke="SpringGreen" HorizontalAlignment="Center" VerticalAlignment="Center" StrokeThickness="10" X1="20" X2="260"/>
-<!--Może będzie lepiej zrobic jako user controL??-->
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition MinWidth="60" Width="auto"/>
+                            <ColumnDefinition Width="30"/>
+                        </Grid.ColumnDefinitions>
+
+
+                        <Rectangle Grid.Column="0" Fill="LightGray" Height="40" Width="40"/>
+                        <TextBlock Grid.Column="0" Text="-" FontSize="30" Padding="0,0,0,8" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                        <Rectangle Grid.Column="1" Fill="Gray" Height="40"/>
+                        <TextBlock Grid.Column="1" Text="0" FontSize="20"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+
+                        <Rectangle Grid.Column="2" Fill="LightGray" Height="40" Width="40"/>
+                        <TextBlock Grid.Column="2" Text="+" FontSize="30" Padding="0,0,0,8" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Grid>
+
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
     </Style>
+
 </ResourceDictionary>

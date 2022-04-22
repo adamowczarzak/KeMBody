@@ -4,6 +4,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:vm="clr-namespace:KeMBody.ViewModels;assembly=KeMBody.ViewModels"
+      xmlns:local="clr-namespace:KeMBody.UI.CustomControls"
       mc:Ignorable="d">
 
     <Page.DataContext>
@@ -29,11 +30,9 @@
             Style="{StaticResource BigTitle}"
             Text="Pomiar wagi na dzień:"/>
 
-        <TextBox
+        <local:NumericUpDown
             Grid.Row="1"
-            Margin="50"
-            Style="{StaticResource BasicTextBox}"/>
-
+            Grid.Column="0"/>
 
         <Button
             Grid.Row="2"
