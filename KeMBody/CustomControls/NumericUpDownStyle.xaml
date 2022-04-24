@@ -7,24 +7,50 @@
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type local:NumericUpDown}">
 
-                    <Grid>
+                    <Grid Height="30">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="30"/>
                             <ColumnDefinition MinWidth="60" Width="auto"/>
                             <ColumnDefinition Width="30"/>
                         </Grid.ColumnDefinitions>
 
+                        <TextBlock
+                            x:Name="Decreasing"
+                            Grid.Column="0"
+                            Padding="0,0,0,10"
+                            Text="-"
+                            FontSize="20"
+                            Background="LightGray"
+                            TextAlignment="Center"/>
 
-                        <Rectangle Grid.Column="0" Fill="LightGray" Height="40" Width="40"/>
-                        <TextBlock Grid.Column="0" Text="-" FontSize="30" Padding="0,0,0,8" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <TextBlock
+                            x:Name="Value"
+                            Grid.Column="1"
+                            Background="Gray"
+                            TextAlignment="Center"
+                            Text="0"
+                            FontSize="20"/>
 
-                        <Rectangle Grid.Column="1" Fill="Gray" Height="40"/>
-                        <TextBlock Grid.Column="1" Text="0" FontSize="20"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <TextBlock
+                            x:Name="Increasing"
+                            Grid.Column="2"
+                            Padding="0,0,0,10"
+                            Text="+"
+                            FontSize="20"
+                            Background="LightGray"
+                            TextAlignment="Center"/>
 
-
-                        <Rectangle Grid.Column="2" Fill="LightGray" Height="40" Width="40"/>
-                        <TextBlock Grid.Column="2" Text="+" FontSize="30" Padding="0,0,0,8" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Grid>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger SourceName="Increasing" Property="IsMouseOver" Value="True">
+                            <Setter TargetName="Increasing" Property="Background" Value="Yellow"/>
+                            <Setter TargetName="Increasing" Property="Cursor" Value="Hand"/>
+                        </Trigger>
+
+
+
+                    </ControlTemplate.Triggers>
 
                 </ControlTemplate>
             </Setter.Value>

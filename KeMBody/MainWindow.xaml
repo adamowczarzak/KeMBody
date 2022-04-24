@@ -6,7 +6,7 @@
         xmlns:res="clr-namespace:KeMBody.UI.Properties.Languages"
         xmlns:vm="clr-namespace:KeMBody.ViewModels;assembly=KeMBody.ViewModels"
         xmlns:en="clr-namespace:KeMBody.Enumerations;assembly=KeMBody.Enumerations"
-         xmlns:local="clr-namespace:KeMBody.UI.CustomControls"
+        xmlns:local="clr-namespace:KeMBody.UI.CustomControls"
         mc:Ignorable="d"
         Height="450" Width="800"
         WindowStyle="None"
